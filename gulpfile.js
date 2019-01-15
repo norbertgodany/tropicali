@@ -57,14 +57,14 @@ gulp.task("watch", function () {
 		notify: false
 	});
 
-	gulp.watch("src/*.html", ["html"]).on('change', browserSync.reload)
-	gulp.watch("src/css/app.scss", ["sass"])
-	gulp.watch("src/fonts/*", ["fonts"])
-	gulp.watch("src/img/*", ["images"])
+	gulp.watch("src/*.html", gulp.series("html")).on('change', browserSync.reload)
+	gulp.watch("src/css/app.scss", gulp.series("sass"))
+	gulp.watch("src/fonts/*", gulp.series("fonts"))
+	gulp.watch("src/img/*", gulp.series("images"))
 })
 
 gulp.task("deploy", function () {
 	ghpages.publish("dist")
 })
 
-gulp.task('default', ["html", "sass", "fonts", "images", "watch"])
+gulp.task('default', gulp.parallel("html", "sass", "fonts", "images", "watch"))
