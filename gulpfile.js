@@ -77,8 +77,9 @@ gulp.task("watch", function () {
 	gulp.watch("src/img/*", gulp.series("images"))
 })
 
-gulp.task("deploy", function () {
+gulp.task("deploy", function (done) {
 	ghpages.publish("dist")
+	done()
 })
 
 gulp.task('default', gulp.parallel("html", "css", "fonts", "images", "watch"))
