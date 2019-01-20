@@ -5,7 +5,7 @@ const gulp = require('gulp')
 const cleanCss = require('gulp-clean-css')
 const sourceMaps = require('gulp-sourcemaps')
 const postcss = require('gulp-postcss')
-const sourceMaps = require('gulp-sourcemaps')
+const sourcemaps = require('gulp-sourcemaps')
 const concat = require('gulp-concat')
 
 // Image minifier
@@ -25,7 +25,7 @@ gulp.task("css", function() {
 		"src/css/typography.css",
 		"src/css/app.css"
 	])
-		.pipe(sourceMaps.init())
+		.pipe(sourcemaps.init())
 		.pipe(
 			postcss([
 				require("autoprefixer"),
