@@ -30,7 +30,5 @@
         "node-sass": "^4.14.1",
         "postcss-preset-env": "^6.7.0"
     },
-    "dependencies": {
-        "normalize-url": "^6.0.1"
-    }
+    "dependencies": {}
 }
