@@ -1,33 +1,36 @@
 {
-  "name": "tropicali",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/norbertgodany/tropicali.git"
-  },
-  "author": "Norbert Godany",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/norbertgodany/tropicali/issues"
-  },
-  "homepage": "https://github.com/norbertgodany/tropicali#readme",
-  "devDependencies": {
-    "autoprefixer": "^10.2.6",
-    "browser-sync": "^2.26.14",
-    "gh-pages": "^2.2.0",
-    "gulp": "^4.0.2",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-postcss": "^9.0.0",
-    "gulp-sass": "^4.1.0",
-    "gulp-sourcemaps": "^2.6.5",
-    "node-sass": "^4.14.1",
-    "postcss-preset-env": "^6.7.0"
-  }
+    "name": "tropicali",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/norbertgodany/tropicali.git"
+    },
+    "author": "Norbert Godany",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/norbertgodany/tropicali/issues"
+    },
+    "homepage": "https://github.com/norbertgodany/tropicali#readme",
+    "devDependencies": {
+        "autoprefixer": "^10.2.6",
+        "browser-sync": "^2.26.14",
+        "gh-pages": "^2.2.0",
+        "gulp": "^4.0.2",
+        "gulp-clean-css": "^4.3.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-imagemin": "^7.1.0",
+        "gulp-postcss": "^9.0.0",
+        "gulp-sass": "^4.1.0",
+        "gulp-sourcemaps": "^2.6.5",
+        "node-sass": "^4.14.1",
+        "postcss-preset-env": "^6.7.0"
+    },
+    "dependencies": {
+        "normalize-url": "^6.0.1"
+    }
 }
